@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#18181B"/>
+  <rect x="40" y="40" width="720" height="370" rx="16" fill="#27272A" stroke="#7C3AED" stroke-width="2"/>
+  <text x="400" y="220" text-anchor="middle" fill="#7C3AED" font-family="system-ui,sans-serif" font-size="32" font-weight="bold">E-Commerce</text>
+  <text x="400" y="260" text-anchor="middle" fill="#71717A" font-family="system-ui,sans-serif" font-size="16">Laravel · React · MySQL</text>
+</svg>
