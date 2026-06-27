@@ -1,11 +1,11 @@
 export const SITE = {
-  name: "Saurav Karena",
-  title: "Saurav Karena — Full-Stack Developer",
+  name: "Saurav",
+  title: "Saurav — Full-Stack Developer",
   description:
     "Premium developer portfolio showcasing full-stack projects, experience, and the 30-Day Full-Stack Challenge.",
-  url: "https://sauravkarena.dev",
-  email: "hello@sauravkarena.dev",
-  domain: "sauravkarena.dev",
+  url: "https://portfolio-delta-ebon-6vr2wraj9d.vercel.app",
+  email: "saurav.karena@gmail.com",
+  domain: "portfolio-delta-ebon-6vr2wraj9d.vercel.app",
 } as const;
 
 export const SOCIAL = {

@@ -1,13 +1,13 @@
 import type { ChallengeDay, Experience, Project, Skill } from "@/types";
 
 export const profile = {
-  name: "Saurav Karena",
+  name: "Saurav",
   role: "Full-Stack Developer",
   tagline: "Building elegant digital experiences with modern web technologies.",
   location: "India",
   experienceYears: "3+",
   avatar: "/images/profile.jpeg",
-  resume: "/resume.pdf",
+  resume: "/saurav resume.pdf",
   typingRoles: [
     "Full-Stack Developer",
     "React Specialist",
@@ -19,8 +19,8 @@ export const profile = {
       "I'm a passionate full-stack developer with a love for crafting clean, performant, and user-centric applications. I specialize in the React ecosystem and Laravel, with a growing focus on modern tooling like Next.js and Python.",
     education: {
       degree: "Bachelor of Computer Applications",
-      institution: "Your University",
-      year: "2021",
+      institution: "Saurashtra University",
+      year: "2019",
     },
     journey: [
       "Started coding with PHP and web fundamentals",
@@ -62,40 +62,14 @@ export const skillCategories = [
 export const experiences: Experience[] = [
   {
     id: "exp-1",
-    company: "Tech Solutions Pvt. Ltd.",
-    role: "Full-Stack Developer",
-    duration: "2023 — Present",
-    location: "Remote",
-    responsibilities: [
-      "Built and maintained Laravel + React applications serving 10K+ users",
-      "Designed RESTful APIs and optimized database queries for performance",
-      "Led frontend migration to Next.js with improved Core Web Vitals",
-      "Collaborated with cross-functional teams using Agile methodologies",
-    ],
-  },
-  {
-    id: "exp-2",
-    company: "Digital Agency Co.",
-    role: "Frontend Developer",
-    duration: "2021 — 2023",
-    location: "Ahmedabad, India",
-    responsibilities: [
-      "Developed responsive React interfaces for client projects",
-      "Implemented Tailwind CSS design systems across multiple products",
-      "Integrated third-party APIs and payment gateways",
-      "Mentored junior developers on React best practices",
-    ],
-  },
-  {
-    id: "exp-3",
-    company: "Freelance",
+    company: "briskbrainteck",
     role: "Web Developer",
-    duration: "2020 — 2021",
+    duration: "3 Years",
     location: "Remote",
     responsibilities: [
-      "Delivered custom WordPress and PHP websites for small businesses",
-      "Managed client communication and project timelines",
-      "Built e-commerce solutions with WooCommerce",
+      "Responsible for end-to-end web development processes, from scratch design to full production deployment.",
+      "Designed and implemented modern user interfaces and robust server-side application logic.",
+      "Ensured high performance, security, and scalability of applications.",
     ],
   },
 ];
