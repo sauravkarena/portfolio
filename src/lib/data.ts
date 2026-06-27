@@ -80,7 +80,7 @@ export const projects: Project[] = [
     title: "Modern Developer Portfolio",
     description:
       "A premium, fully responsive portfolio built with Next.js 15, Framer Motion, and Tailwind CSS — the centerpiece of the 30-Day Challenge.",
-    image: "/images/projects/portfolio.jpeg",
+    image: "/images/projects/portfolio.png",
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/sauravkarena/portfolio",
     liveDemo: "https://sauravkarena.dev",
@@ -151,7 +151,7 @@ export const challengeDays: ChallengeDay[] = [
     demo: "https://sauravkarena.dev",
     github: "https://github.com/sauravkarena/portfolio",
     linkedin: "https://linkedin.com/in/sauravkarena",
-    screenshot: "/images/projects/portfolio.svg",
+    screenshot: "/images/projects/portfolio.png",
   },
   {
     day: 2,
