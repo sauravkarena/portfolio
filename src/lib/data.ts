@@ -18,7 +18,7 @@ export const profile = {
     introduction:
       "I'm a passionate full-stack developer with a love for crafting clean, performant, and user-centric applications. I specialize in the React ecosystem and Laravel, with a growing focus on modern tooling like Next.js and Python.",
     education: {
-      degree: "Bachelor of Computer Applications",
+      degree: "Bachelor of Science in Information Technology",
       institution: "Saurashtra University",
       year: "2019",
     },
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     title: "Modern Developer Portfolio",
     description:
       "A premium, fully responsive portfolio built with Next.js 15, Framer Motion, and Tailwind CSS — the centerpiece of the 30-Day Challenge.",
-    image: "/images/projects/portfolio.svg",
+    image: "/images/projects/portfolio.jpeg",
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/sauravkarena/portfolio",
     liveDemo: "https://sauravkarena.dev",
