@@ -83,7 +83,7 @@ export const projects: Project[] = [
     image: "/images/projects/portfolio.png",
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/sauravkarena/portfolio",
-    liveDemo: "https://sauravkarena.dev",
+    liveDemo: "https://portfolio-delta-ebon-6vr2wraj9d.vercel.app",
     category: "nextjs",
     featured: true,
   },
@@ -148,7 +148,7 @@ export const challengeDays: ChallengeDay[] = [
     status: "completed",
     description:
       "Premium developer portfolio with animated hero, glassmorphism, dark mode, and full SEO setup.",
-    demo: "https://sauravkarena.dev",
+    demo: "https://portfolio-delta-ebon-6vr2wraj9d.vercel.app",
     github: "https://github.com/sauravkarena/portfolio",
     linkedin: "https://linkedin.com/in/sauravkarena",
     screenshot: "/images/projects/portfolio.png",
