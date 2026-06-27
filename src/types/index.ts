@@ -25,6 +25,7 @@ export interface Project {
   liveDemo?: string;
   category: "laravel" | "react" | "nextjs" | "python" | "other";
   featured?: boolean;
+  isUpcoming?: boolean;
 }
 
 export interface ChallengeDay {

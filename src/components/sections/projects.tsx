@@ -14,51 +14,81 @@ import { projectFilters, projects } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
 function ProjectCard({ project }: { project: (typeof projects)[0] }) {
+  const isUpcoming = project.isUpcoming;
+
   return (
-    <GlassCard className="group overflow-hidden p-0">
+    <GlassCard className={cn("group overflow-hidden p-0 transition-all duration-300", isUpcoming && "opacity-85 border-white/5 hover:border-white/10")}>
       <div className="relative aspect-video overflow-hidden">
         <Image
           src={project.image}
           alt={project.title}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className={cn(
+            "object-cover transition-transform duration-500",
+            isUpcoming ? "filter grayscale-[50%] opacity-40 blur-[2px]" : "group-hover:scale-105"
+          )}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />
+        
+        {isUpcoming && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <Badge className="bg-gradient-to-r from-accent to-purple text-white shadow-lg border-none px-3.5 py-1.5 text-xs font-semibold tracking-wider uppercase">
+              Coming Soon
+            </Badge>
+          </div>
+        )}
       </div>
       <div className="p-6">
-        <h3 className="text-lg font-semibold">{project.title}</h3>
+        <div className="flex items-center justify-between gap-2">
+          <h3 className={cn("text-lg font-semibold truncate", isUpcoming ? "text-muted-foreground" : "text-foreground")}>
+            {project.title}
+          </h3>
+          {isUpcoming && (
+            <Badge variant="default" className="border-accent/30 text-accent/80 text-[10px] uppercase font-bold tracking-wider shrink-0 bg-transparent">
+              Upcoming
+            </Badge>
+          )}
+        </div>
         <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">
           {project.description}
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           {project.techStack.map((tech) => (
-            <Badge key={tech} variant="secondary">
+            <Badge key={tech} variant="secondary" className={cn(isUpcoming && "opacity-60")}>
               {tech}
             </Badge>
           ))}
         </div>
-        <div className="mt-4 flex gap-3">
-          {project.github && (
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-accent"
-            >
-              <GitHubIcon className="h-4 w-4" />
-              GitHub
-            </a>
-          )}
-          {project.liveDemo && (
-            <a
-              href={project.liveDemo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-accent"
-            >
-              <ExternalLink className="h-4 w-4" />
-              Live Demo
-            </a>
+        <div className="mt-4 flex gap-3 min-h-[20px]">
+          {isUpcoming ? (
+            <span className="text-xs font-medium text-muted-foreground/60 italic flex items-center gap-1">
+              <span>✨</span> Stay tuned for the release!
+            </span>
+          ) : (
+            <>
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-accent"
+                >
+                  <GitHubIcon className="h-4 w-4" />
+                  GitHub
+                </a>
+              )}
+              {project.liveDemo && (
+                <a
+                  href={project.liveDemo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-accent"
+                >
+                  <ExternalLink className="h-4 w-4" />
+                  Live Demo
+                </a>
+              )}
+            </>
           )}
         </div>
       </div>
