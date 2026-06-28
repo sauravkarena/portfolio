@@ -92,7 +92,7 @@ export const projects: Project[] = [
     title: "SaaS Landing Page",
     description:
       "A conversion-focused SaaS landing page with responsive layouts, modern UI/UX, pricing tables, testimonials, and smooth scroll animations.",
-    image: "/images/projects/ecommerce.svg",
+    image: "/images/projects/SaaS.png",
     techStack: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/sauravkarena/modern-saas-landing-page",
     liveDemo: "https://modern-saas-landing-page-hazel.vercel.app",
