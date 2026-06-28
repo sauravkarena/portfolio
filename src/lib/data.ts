@@ -94,9 +94,10 @@ export const projects: Project[] = [
       "A conversion-focused SaaS landing page with responsive layouts, modern UI/UX, pricing tables, testimonials, and smooth scroll animations.",
     image: "/images/projects/ecommerce.svg",
     techStack: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/sauravkarena/modern-saas-landing-page",
+    liveDemo: "https://modern-saas-landing-page-hazel.vercel.app",
     category: "nextjs",
     featured: true,
-    isUpcoming: true,
   },
   {
     id: "proj-3",
@@ -155,15 +156,25 @@ export const challengeDays: ChallengeDay[] = [
   },
   {
     day: 2,
+    title: "SaaS Landing Page",
+    status: "completed",
+    description:
+      "A conversion-focused SaaS landing page with dark/light theme options, 3D mouse parallax cards, and Zod email validators.",
+    demo: "https://modern-saas-landing-page-hazel.vercel.app",
+    github: "https://github.com/sauravkarena/modern-saas-landing-page",
+    screenshot: "/images/projects/ecommerce.svg",
+  },
+  {
+    day: 3,
     title: "Coming Tomorrow...",
     status: "upcoming",
     description: "Stay tuned for the next project in the 30-Day Full-Stack Challenge.",
   },
-  ...Array.from({ length: 28 }, (_, i) => ({
-    day: i + 3,
+  ...Array.from({ length: 27 }, (_, i) => ({
+    day: i + 4,
     title: "Coming Soon",
     status: "upcoming" as const,
-    description: `Day ${i + 3} project will be revealed soon.`,
+    description: `Day ${i + 4} project will be revealed soon.`,
   })),
 ];
 
