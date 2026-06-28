@@ -162,7 +162,7 @@ export const challengeDays: ChallengeDay[] = [
       "A conversion-focused SaaS landing page with dark/light theme options, 3D mouse parallax cards, and Zod email validators.",
     demo: "https://modern-saas-landing-page-hazel.vercel.app",
     github: "https://github.com/sauravkarena/modern-saas-landing-page",
-    screenshot: "/images/projects/ecommerce.svg",
+    screenshot: "/images/projects/SaaS.png",
   },
   {
     day: 3,
