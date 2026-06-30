@@ -101,14 +101,12 @@ export default function TaskManagerDetailPage() {
 
         {/* Project Showcasing Banner (Walkthrough Video) */}
         <div className="mb-12">
-          <div className="relative aspect-video rounded-2xl overflow-hidden border border-white/10 bg-black/40 shadow-2xl">
-            <video 
-              src="/videos/tasks.mp4" 
-              controls 
-              className="w-full h-full object-cover"
-              poster="/images/projects/tasks.png"
-            />
-          </div>
+          <video 
+            src="/videos/tasks.mp4" 
+            controls 
+            className="w-full rounded-2xl border border-white/10 bg-black/40 shadow-2xl"
+            poster="/images/projects/tasks.png"
+          />
           <p className="mt-3 text-xs text-muted-foreground text-center flex items-center justify-center gap-1.5">
             <span>📹</span> Play the video walkthrough to see the Kanban drag-and-drop, theme toggling, and validation states.
           </p>
