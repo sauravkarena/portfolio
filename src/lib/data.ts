@@ -7,7 +7,7 @@ export const profile = {
   location: "India",
   experienceYears: "3+",
   avatar: "/images/profile.jpeg",
-  resume: "/saurav resume.pdf",
+  resume: "/saurav_resume_updated (1).pdf",
   typingRoles: [
     "Full-Stack Developer",
     "React Specialist",
