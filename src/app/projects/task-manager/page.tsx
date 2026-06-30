@@ -99,17 +99,20 @@ export default function TaskManagerDetailPage() {
           </div>
         </div>
 
-        {/* Project Showcasing Banner */}
-        <GlassCard className="overflow-hidden p-0 mb-12 border-white/5 relative aspect-video">
-          <Image
-            src="/images/projects/tasks.png"
-            alt="TaskFlow Dashboard Screenshot"
-            fill
-            priority
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent" />
-        </GlassCard>
+        {/* Project Showcasing Banner (Walkthrough Video) */}
+        <div className="mb-12">
+          <div className="relative aspect-video rounded-2xl overflow-hidden border border-white/10 bg-black/40 shadow-2xl">
+            <video 
+              src="/videos/tasks.mp4" 
+              controls 
+              className="w-full h-full object-cover"
+              poster="/images/projects/tasks.png"
+            />
+          </div>
+          <p className="mt-3 text-xs text-muted-foreground text-center flex items-center justify-center gap-1.5">
+            <span>📹</span> Play the video walkthrough to see the Kanban drag-and-drop, theme toggling, and validation states.
+          </p>
+        </div>
 
         {/* Project Info & Spec Grid */}
         <div className="grid gap-8 md:grid-cols-3 mb-16">
@@ -196,10 +199,10 @@ export default function TaskManagerDetailPage() {
 
             <GlassCard className="p-6 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 border-indigo-500/10">
               <h3 className="font-bold text-sm mb-2 flex items-center gap-1">
-                <span>📹</span> Walkthrough
+                <span>📹</span> Demo Walkthrough
               </h3>
               <p className="text-xs text-muted-foreground leading-relaxed mb-4">
-                No local live deployment is available for this project. Check out the full source code and setup steps in the repository below.
+                Watch the video walkthrough or checkout the setup instructions and full source code on GitHub.
               </p>
               <Button asChild className="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold">
                 <a
