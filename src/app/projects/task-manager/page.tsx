@@ -14,7 +14,7 @@ export const metadata = createMetadata({
 });
 
 export default function TaskManagerDetailPage() {
-  const techStack = ["React", "Laravel 12", "Inertia.js", "MySQL", "Tailwind CSS v4", "Framer Motion"];
+  const techStack = ["React", "Laravel 12", "Inertia.js", "MySQL", "Tailwind CSS v4", "Framer Motion", "Recharts"];
 
   const features = [
     {
@@ -23,29 +23,29 @@ export default function TaskManagerDetailPage() {
       icon: GripVertical,
     },
     {
-      title: "Optimistic UI Updates",
-      description: "Tasks update instantly on the screen when dropped, with the Inertia API syncing changes to MySQL database silently in the background.",
-      icon: Zap,
+      title: "Recharts Analytics Charts",
+      description: "Sleek status allocation Pie charts, task priority distribution Bar charts, and project progress metric bars visualized on the user dashboard.",
+      icon: Layers,
+    },
+    {
+      title: "Board Search & Real-Time Filters",
+      description: "Search input and priority pills filter tasks instantly on the client side without needing full page queries.",
+      icon: AlertCircle,
+    },
+    {
+      title: "Due Dates & Overdue Status",
+      description: "Add custom due dates to tasks. Visually flags overdue deadlines in red next to priority indicators.",
+      icon: ShieldCheck,
+    },
+    {
+      title: "Full Project CRUD Controls",
+      description: "Delete whole project workspaces (including tasks) and edit workspace meta details cleanly on the dashboard.",
+      icon: Folder,
     },
     {
       title: "Premium Validation & Error Handling",
       description: "Native HTML required bubbles are disabled. Form validation errors are verified on the backend and highlighted with custom React Alert components.",
-      icon: AlertCircle,
-    },
-    {
-      title: "Smart Completed Tasks Restriction",
-      description: "To prevent accidental modifications, completed tasks in the 'Done' column are locked. Dragging them triggers a custom React toast warning.",
-      icon: ShieldCheck,
-    },
-    {
-      title: "Trello-Style Responsive Layout",
-      description: "Columns expand vertically with content, while the board level scrolls horizontally to fit a flexible, professional viewport.",
-      icon: Layers,
-    },
-    {
-      title: "Unified Dark & Light Themes",
-      description: "System-integrated layout with persistent dark mode support, using tailwind custom variables and smooth CSS transitions.",
-      icon: Sparkles,
+      icon: Zap,
     },
   ];
 

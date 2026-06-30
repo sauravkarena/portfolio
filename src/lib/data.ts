@@ -103,9 +103,9 @@ export const projects: Project[] = [
     id: "proj-3",
     title: "Task Manager",
     description:
-      "A collaborative workflow kanban board built with Laravel, Inertia.js, and React. Features status drag-and-drop, priorities, active sidebar state, and toast validation.",
+      "A collaborative workflow kanban board with Recharts analytics charts, real-time board filters/search, task due dates, inline task editing, and full Project CRUD controls.",
     image: "/images/projects/tasks.png",
-    techStack: ["React", "Laravel", "Inertia.js", "MySQL", "Tailwind CSS"],
+    techStack: ["React", "Laravel", "Inertia.js", "MySQL", "Tailwind CSS", "Recharts"],
     github: "https://github.com/sauravkarena/task-manager",
     localDetailPath: "/projects/task-manager",
     category: "laravel",
@@ -170,7 +170,7 @@ export const challengeDays: ChallengeDay[] = [
     title: "Task Manager",
     status: "completed",
     description:
-      "A collaborative workflow kanban board with task status drag-and-drop, priorities, active sidebar, and toast notifications.",
+      "A collaborative kanban board featuring real-time task search/filtering, inline editing, task due dates, full Project CRUD, and Recharts analytics dashboards.",
     github: "https://github.com/sauravkarena/task-manager",
     screenshot: "/images/projects/tasks.png",
   },
