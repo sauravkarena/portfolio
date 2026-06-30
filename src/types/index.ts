@@ -23,6 +23,7 @@ export interface Project {
   techStack: string[];
   github?: string;
   liveDemo?: string;
+  localDetailPath?: string;
   category: "laravel" | "react" | "nextjs" | "python" | "other";
   featured?: boolean;
   isUpcoming?: boolean;

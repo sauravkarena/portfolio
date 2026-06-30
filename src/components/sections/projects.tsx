@@ -88,6 +88,15 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
                   Live Demo
                 </a>
               )}
+              {project.localDetailPath && (
+                <Link
+                  href={project.localDetailPath}
+                  className="flex items-center gap-1.5 text-sm text-accent hover:underline font-medium"
+                >
+                  <ExternalLink className="h-4 w-4" />
+                  View Details
+                </Link>
+              )}
             </>
           )}
         </div>

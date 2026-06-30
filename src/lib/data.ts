@@ -103,12 +103,13 @@ export const projects: Project[] = [
     id: "proj-3",
     title: "Task Manager",
     description:
-      "A collaborative workflow application featuring authentication, status tracking, task priorities, due dates, and full CRUD operations.",
-    image: "/images/projects/tasks.svg",
-    techStack: ["React", "Laravel", "PostgreSQL", "REST API"],
+      "A collaborative workflow kanban board built with Laravel, Inertia.js, and React. Features status drag-and-drop, priorities, active sidebar state, and toast validation.",
+    image: "/images/projects/tasks.png",
+    techStack: ["React", "Laravel", "Inertia.js", "MySQL", "Tailwind CSS"],
+    github: "https://github.com/sauravkarena/task-manager",
+    localDetailPath: "/projects/task-manager",
     category: "laravel",
     featured: true,
-    isUpcoming: true,
   },
   {
     id: "proj-4",
@@ -166,9 +167,12 @@ export const challengeDays: ChallengeDay[] = [
   },
   {
     day: 3,
-    title: "Coming Tomorrow...",
-    status: "upcoming",
-    description: "Stay tuned for the next project in the 30-Day Full-Stack Challenge.",
+    title: "Task Manager",
+    status: "completed",
+    description:
+      "A collaborative workflow kanban board with task status drag-and-drop, priorities, active sidebar, and toast notifications.",
+    github: "https://github.com/sauravkarena/task-manager",
+    screenshot: "/images/projects/tasks.png",
   },
   ...Array.from({ length: 27 }, (_, i) => ({
     day: i + 4,
